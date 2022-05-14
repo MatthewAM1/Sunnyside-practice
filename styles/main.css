@@ -1,0 +1,14 @@
+@import url("./variables.css");
+@import url("./fonts.css");
+@import url("./header.css");
+@import url("./banner.css");
+@import url("./main-content.css");
+@import url("./testimoni.css");
+@import url("./gallery.css");
+@import url("./footer.css");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}

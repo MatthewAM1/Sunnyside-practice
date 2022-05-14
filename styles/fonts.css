@@ -1,0 +1,38 @@
+/* Barlow */
+/* Weights: 600 */
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
+
+/* Fraunces */
+/* Weights: 700, 900 */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap');
+
+
+.primary-text-title{
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    letter-spacing: 8px;
+    text-align: center;
+}
+
+.secondary-text-title{
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.text-subtitle{
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+}
+
+.text-paragraph{
+    font-size: 18px;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+}
+
+.text-paragraph-2{
+    font-size: 18px;
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+}

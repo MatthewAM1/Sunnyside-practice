@@ -1,0 +1,40 @@
+.banner {
+  background-image: url("../images/desktop/image-header.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+}
+
+@media only screen and (max-width: 576px){
+  .banner{
+    background-image: url(../images/mobile/image-header.jpg);
+  }
+}
+
+/* Title */
+.banner-title {
+  color: var(--white);
+  font-size: 55px;
+  left: calc(50% - (50vw / 2));
+  position: absolute;
+  top: 25vh;
+  width: 50vw;
+}
+
+@media only screen and (max-width: 576px){
+  .banner-title {
+    font-size: 35px;
+    left: calc(50% - (80vw / 2));
+    width: 80vw;
+  }
+}
+/* End of Title */
+
+/* Icon Arrow Down */
+.icon-arrow-down {
+  left: calc(50% - (26px / 2)); /* i see the width on svg file */
+  position: absolute;
+  top: 45vh;
+}
+/* Icon Arrow Down */

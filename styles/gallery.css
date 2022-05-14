@@ -1,0 +1,23 @@
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery-image {
+  min-height: 550px;
+  object-fit: cover;
+  width: 25%;
+}
+
+@media screen and (max-width: 480px) {
+  .gallery-image {
+    min-height: 100px;
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .gallery-image {
+    min-height: 75px;
+  }
+}

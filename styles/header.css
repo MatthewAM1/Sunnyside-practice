@@ -1,0 +1,109 @@
+header {
+  align-items: center;
+  background-color: var(--light-blue);
+  color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 100px;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+}
+
+@media only screen and (max-width: 576px){
+  header{
+    padding: 15px 30px;
+  }
+}
+
+/* Humberger Button */
+.humberger-button {
+  display: none;
+}
+
+@media only screen and (max-width: 576px){
+  .humberger-button {
+    display: flex;
+    height: 50px;
+    transition: all 0.3s ease-in-out;
+    width: 50px;
+  }
+}
+
+.rotate {
+  transform: rotate(90deg);
+}
+/* End of Humberger Button */
+
+/* Desktop Navigation */
+.desktop-nav {
+  align-items: center;
+  display: flex;
+  gap: 30px;
+}
+
+@media only screen and (max-width: 576px) {
+  .desktop-nav{
+    display: none;
+  }
+}
+
+.desktop-nav a.nav-item {
+  color: var(--white);
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.desktop-nav a.nav-item:hover {
+  color: var(--yellow);
+}
+
+.desktop-nav a.nav-item.active {
+  background-color: var(--white);
+  border-radius: 30px;
+  color: var(--very-dark-desaturated-blue);
+  padding: 10px 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.desktop-nav a.nav-item.active:hover {
+  background-color: var(--yellow);
+  cursor: pointer;
+}
+/* End of Desktop Navigation */
+
+/* Mobile Navigation */
+.mobile-nav {
+  align-items: center;
+  background-color: var(--white);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  height: 40vh;
+  justify-content: space-between;
+  left: calc(50% - (80% / 2));
+  padding: 40px;
+  position: absolute;
+  top: -40vh;
+  width: 80%;
+  transition: all 0.3s ease-in-out;
+  z-index: 10;
+}
+
+.show {
+  top: calc(50vh - (40vh / 2));
+}
+
+.mobile-nav a.nav-item {
+  color: var(--dark-grayish-blue);
+  display: block;
+  text-decoration: none;
+}
+
+.mobile-nav a.nav-item.active {
+  background-color: var(--yellow);
+  border-radius: 30px;
+  color: var(--very-dark-desaturated-blue);
+  padding: 10px 20px;
+}
+/* End of Mobile Navigation */

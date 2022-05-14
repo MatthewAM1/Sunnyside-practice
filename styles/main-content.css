@@ -1,0 +1,130 @@
+.half-content {
+  display: flex;
+}
+
+.text-wrapper {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+
+.text-wrapper div {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  width: 50%;
+}
+
+.text-wrapper div .text-subtitle {
+  font-size: 34px;
+}
+
+.text-wrapper div .text-paragraph {
+  color: var(--very-dark-grayish-blue);
+}
+
+.btn-more {
+  align-self: flex-start;
+  color: #000;
+  font-weight: bold;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.btn-more::after {
+  bottom: 1px;
+  content: "";
+  height: 6px;
+  left: -8px;
+  position: absolute;
+  width: calc(100% + 16px);
+  z-index: -1;
+}
+
+.yellow-line::after {
+  background-color: #fed401a0;
+}
+
+.pink-line::after {
+  background-color: pink;
+}
+
+.half-image {
+  height: auto;
+  width: 50%;
+}
+
+.double-img {
+  align-items: flex-end;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 550px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 60px;
+}
+
+#graphic-design-img {
+  background-image: url("../images/desktop/image-graphic-design.jpg");
+}
+
+#photography-img {
+  background-image: url("../images/desktop/image-photography.jpg");
+}
+
+.text-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  text-align: center;
+  width: 50%;
+}
+
+.text-bottom .text-subtitle {
+  font-size: 34px;
+}
+
+@media screen and (max-width: 576px) {
+  .text-bottom .text-subtitle,
+  .text-wrapper div .text-subtitle {
+    font-size: 26px;
+  }
+
+  .main-content .text-paragraph {
+    font-size: 16px;
+  }
+
+  .text-wrapper div, .text-bottom {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .half-content{
+    flex-wrap: wrap;
+  }
+
+  .text-wrapper,
+  .half-image {
+    min-height: 500px;
+    width: 100%;
+  }
+
+  .half-content:first-child .half-image {
+    order: -1;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .text-wrapper, 
+  .half-image {
+    min-height: 350px;
+  }  
+
+  .double-img{
+    padding-bottom: 20px;
+  }
+}
